@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>taikym</title>
+</head>
+<style>
+  #mainButton {
+      border: 10px;
+    margin-left: 1px;
+    margin-top: 10px;
+    width: 480px;
+    height: 200px;
+   /* border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+   */ border-radius: 20px;
+    background-color: black;
+    display: inline-block;
+      margin-bottom:70px;
+  }
+  #circle {
+    margin-left: 10px;
+    margin-top: 60px;
+     margin-bottom: -100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+     
+  }
+img {
+  margin-left: -7px;
+    margin-top: -2px;
+      width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 10px;
+}
+  #username {
+    margin-left: 100px;
+    margin-top: -70px;
+    font-size:1.7em;
+   /* width: 300;
+    height: 30px;*/
+      font-weight: bold;
+  }
+  h1 {
+    /*margin-left: 0px;*/
+    margin-top: 80px;
+    width: 500px;
+    height: 350px;
+    border-radius: 0px;
+    display: inline-block;
+    background-color: lavender;
+  }
+  #user {
+    margin-left: 100px;
+    margin-top: -20px;
+    font-size:0.8em;
+      color: grey;
+  }
+#displaymsg {
+ font-family: Arial, sans-serif;
+  color: white;
+ /* margin-l0px;*/
+    text-align: left;
+    margin-top: -70px;
+    font-size:1.5em;
+    font-weight: bold;
+}
+#verify {
+   width: 20px;
+    height: 20px;
+    border-radius: 20px;
+   margin-left: 5px;/*
+    margin-top: -50px;*/
+}
+body {
+    display: inline-block;
+    background-color: lavender;
+}
+#name, #mylink{
+   width: 300px;
+    height: 50px;
+    border-radius: 20px;
+   margin-left: 5px;
+   /* font-weight: bold;*/
+    font-size: 0.9em;/*
+    margin-top: -50px;*/
+}
+#mymessage {
+   width: 350px;
+    height: 100px;
+    border-radius: 10px;
+   font-family: Arial, sans-serif;
+  color: black;
+ /* margin-l0px;*/
+    font-size:0.8em;
+    font-weight: bold;  /*margin-top: -50px;*/
+}
+#save {
+   width: 80px;
+    height: 50px;
+    border-radius: 10px;
+   font-family: Arial, sans-serif;
+  color: white;
+    background-color: grey;
+  margin-left: 200px;
+    font-size:1.3em;
+    font-weight: bold;  
+}
+#homeB, #aboutB, #whatsappB, #telegramB {
+          width: 80px;
+          color: white;
+          height: 40px;
+          margin-left: 20px;
+          border-radius: 20px;
+    margin-top: 10px;
+    border: 10px;
+}
+</style>
+<body id="body">
+    <header style="background-color: grey;
+        height: 70px;
+        width: 100%;
+        
+        display: inline-block;">
+    <nav>
+        <a href="TaiKym.html"><button id="homeB" style="background-color: blue;
+            margin-left: 60px;">Home</button></a>
+        <a href="aboutTaiKym.html"><button id="aboutB" style="background-color: darkblue">About</button></a>
+        <a href="https://t.me/anonym_tech"><button id="telegramB" style="background-color: violet;">Telegram</button></a>
+        <a href="https://chat.whatsapp.com/Fy6kMEoqwOl8lLQC51o5Mo"><button id="whatsappB" style="background-color: green;">Whatsapp</button></a>
+    </nav>
+    </header>
+      <button id="circle"><img src="https://files.catbox.moe/ruk2q2.jpg"></button>
+    <p id="username">Myk Taider<span><img id="verify" src="https://files.catbox.moe/whipwe.jpg" alt="✓"></span></p><!--<span><img id="verify" src="https://files.catbox.moe/whipwe.jpg"></span>-->
+    <p id="user">@_myk_taider_48</p>
+  
+  <button id="mainButton"><p id="displaymsg">Psalm 119:18 says, "Open my eyes, that I may behold wondrous things out of your law".  </p></button>
+  
+  
+    <span
+        id="blockTheme"
+        style="font-weight: bold;
+        font-family: 'Arial', serif;
+        font-size:1.6em; ">BLOCK THEME
+      <button onclick="displayRed()"
+          id="buttonRed" style="
+          background-color: red;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;"></button>
+        <button onclick="displayBlack()"
+          id="buttonBlack" style="
+          background-color: black;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;"></button>
+        <button onclick="displayBlue()"
+          id="buttonBlue" style="
+          background-color: blue;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;"></button>
+        <button onclick="displayGreen()"
+            id="buttonGreen" style="
+          background-color: green;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;"></button>  
+        <button onclick="displayLavender()"
+            id="buttonLavender" style="
+          background-color: lavender;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;"></button>
+        <button onclick="displayGrey()"
+            id="buttonGrey" style="
+          background-color: grey;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;"></button>        
+    </span>
+<h2>
+  <span id="myname"> <label for="name">USERNAME:</label>
+  <input id="name" placeholder="Myk Taider" type="text">
+     
+  </span>
+    <p 
+        style="font-size: 0.5em;
+        color: red;
+        margin-left: 140px;"
+        id="errorName"></p>
+  <br><br>
+<span id="userlink"
+    style="margin-top: -20px;"><label for="userlink">USERLINK:</label>
+    <input id="mylink" placeholder="@_myk_taider_48" type="text"></span>
+  <p 
+        style="font-size: 0.5em;
+        color: red;
+        margin-left: 140px;"
+        id="errorLink"></p>  
+    <br><br>
+  <span id="message"> <label for="message">Message:</label>
+  <input type="text" placeholder="Psalm 119:18 says, 'Open my eyes, that I may behold wondrous things out of your law'. 
+" id="mymessage"></span>
+  <br><br>
+    <button onclick="myFunction()" type="wrap" id="save">Save</button>
+</h2>
+      <h3 id="themes"
+          style="text-align: center;">SETTINGS</h3>
+    <span>
+      <button onclick="changeThemeBlack()"
+            id="buttonBlackTheme" style="
+          background-color: Black;
+          width: 80px;
+          color: white;
+          border: 10px;
+          height: 40px;
+          margin-left: 160px;
+          border-radius: 20px;">DARK</button>  
+      <button onclick="changeThemeLight()"
+            id="buttonLightTheme" style="
+          background-color: lavender;
+          width: 80px;
+          color: black;
+          border: 10px;
+          height: 40px;
+          border-radius: 20px;"><u>LIGHT</u></button>  
+
+    </span>
+        <script>
+function myFunction() {
+ let name = document.getElementById('name').value;
+let index = (name.length);
+ let rongNum = (index < 25);   
+    if (rongNum == true) {
+        if(name) {
+                document.getElementById('save').style.backgroundColor = 'green';
+                document.getElementById('errorName').innerText = '';
+   // let ver = '†'
+   // let clr = (ver.style.color = 'blue');
+  let wordLength = (name.length);
+    let lastIndex = (name.charAt(wordLength - 1));
+    let errorIndex = (lastIndex === '†');
+    
+    if (errorIndex == false) {
+  document.getElementById('username').innerHTML = `${name}<span style= "color: #00BFFF;">&nbsp;<!--<img  id="verify" src="https://files.catbox.moe/whipwe.jpg">-->†</span>`;
+//document.getElementById('verify').style.display = 'block';
+    } 
+else if (errorIndex == true) {
+ document.getElementById('errorName').innerHTML = `Error! Invalid Character !!`;   
+}  
+    }
+     else {
+         document.getElementById('errorName').innerHTML = `Error! Empty Input!!`;   
+     }        
+    } 
+     else {
+         document.getElementById('errorName').innerHTML = `Error! Characters Exceed Limit !!`;   
+     }
+let linkUser = document.getElementById('mylink').value;
+if (rongNum == true) {
+if(linkUser) {
+  document.getElementById('user').innerHTML = `${linkUser}  †`;
+  document.getElementById('errorLink').innerText = '';
+    
+}
+else {
+         document.getElementById('errorLink').innerHTML = `Error! Empty Input !!`;   
+     }       
+} 
+else {
+         document.getElementById('errorLink').innerHTML = `Error! Characters Exceed Limit !!`;   
+     }     
+let mymsg = document.getElementById('mymessage').value;
+
+if(mymsg) {
+  document.getElementById('displaymsg').innerHTML = `${mymsg}`;
+}  
+ // document.getElementById('verify').style.display = 'block';
+
+/*let username = prompt(
+  //"Name will dosplay after ten secs", '');
+  
+  if(username) {
+let num = 10;
+let interval = 10;
+
+let count = setInterval(
+  function () {
+  //console.log(num)
+  num--;
+  if (num == 0) {
+    clearInterval(count)
+    document.getElementById('name').innerHTML = username;
+  }
+  },interval);
+  }*/
+}
+     // function displayRed() { 
+    document.getElementById('buttonRed').addEventListener(
+  'click', function displayRed() {
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('mainButton').style.backgroundColor = 'red';
+document.getElementById('displaymsg').style.color = 'white';
+    });
+ //     }
+      //displayRed()
+    //  function  displayBlack() {
+          document.getElementById('buttonBlack').addEventListener(
+  'click', function displayBlack() { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('mainButton').style.backgroundColor = 'black';
+document.getElementById('displaymsg').style.color = 'white';
+    });
+   //   }
+//displayBlack()  
+  //    function  displayBlue() {
+          document.getElementById('buttonBlue').addEventListener(
+  'click', function displayBlue() { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('mainButton').style.backgroundColor = 'blue';
+ document.getElementById('displaymsg').style.color = 'white';
+   });
+   //   }
+//displayBlue()   
+          document.getElementById('buttonGreen').addEventListener(
+  'click', function displayGreen() { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('mainButton').style.backgroundColor = 'green';
+document.getElementById('displaymsg').style.color = 'white';
+   });
+          document.getElementById('buttonLavender').addEventListener(
+  'click', function displayLavender() { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('mainButton').style.backgroundColor = 'lavender';
+      document.getElementById('displaymsg').style.color = 'black';
+
+    }); 
+              document.getElementById('buttonGrey').addEventListener(
+  'click', function displayGrey() { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('mainButton').style.backgroundColor = 'grey';
+      document.getElementById('displaymsg').style.color = 'white';
+
+    }); 
+function changeThemeBlack() {
+ document.getElementById('buttonBlackTheme').addEventListener(
+  'click', function () { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('body').style.backgroundColor = 'black';
+      document.getElementById('displaymsg').style.color = 'white';
+document.getElementById('username').style.color = 'white';
+document.getElementById('myname').style.color = 'white';
+document.getElementById('userlink').style.color = 'white';
+document.getElementById('message').style.color = 'white';
+document.getElementById('themes').style.color = 'white';
+document.getElementById('mainButton').style.backgroundColor = 'grey';
+document.getElementById('blockTheme').style.color = 'white';
+
+    });    
+//}    
+//function changeThemeLight() {
+ document.getElementById('buttonLightTheme').addEventListener(
+  'click', function changeThemeLight() { 
+        // Change the color of "myButton" to red when "R" is clicked
+        document.getElementById('body').style.backgroundColor = 'lavender';
+      document.getElementById('displaymsg').style.color = 'black';
+document.getElementById('username').style.color = 'black';
+document.getElementById('myname').style.color = 'black';
+document.getElementById('userlink').style.color = 'black';
+document.getElementById('message').style.color = 'black';
+document.getElementById('themes').style.color = 'black';
+document.getElementById('mainButton').style.backgroundColor = 'lavender';
+
+    });    
+}    
+</script>
+    <footer style="margin-top: 30px;
+        text-align: center;">&copy;2025 • All Rights Reserved • myk.J30</footer>
+  </body>
+</html>
